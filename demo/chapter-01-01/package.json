@@ -1,0 +1,16 @@
+{
+  "name": "chapter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "graphql": "^14.0.2",
+    "koa": "^2.6.1",
+    "koa-graphql": "^0.8.0"
+  }
+}
