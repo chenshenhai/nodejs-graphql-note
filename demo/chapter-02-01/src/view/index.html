@@ -1,0 +1,33 @@
+<html>
+<head>
+  <title>index</title>
+</head>
+<body>
+<h1>open console!</h1>
+
+<script>
+(function(){
+  const qs = `{
+    lang(key:"key1") {
+      name,
+      id,
+    }
+  }`;
+  fetch('/graphql', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Accept': 'application/json',
+    },
+    body: JSON.stringify({query: qs})
+  }).then((result) => {
+    return result.json();
+  }).then((data) => {
+    console.log('====== GraphQL result ======')
+    console.log(data)
+  });
+})();
+</script>
+</body>
+
+</html>
